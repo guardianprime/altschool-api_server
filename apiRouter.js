@@ -1,7 +1,11 @@
+const { parse } = require("url");
+const getItem = require("./handlers/getItem");
 const getItems = require("./handlers/getItems");
 const createItem = require("./handlers/createItem");
 
 function router(req, res) {
+  const parsedUrl = parse(req.url, true);
+  req.url = parsedUrl.pathname;
   const method = req.method;
   const url = req.url;
 
@@ -12,7 +16,6 @@ function router(req, res) {
   } else if (url.startsWith("/items/") && method === "PUT") {
     updateItem(req, res);
   } else if (url.startsWith("/items/") && method === "GET") {
-    s;
     getItem(req, res);
   } else if (url.startsWith("/items/") && method === "DELETE") {
     deleteItem(req, res);

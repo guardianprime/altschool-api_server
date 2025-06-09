@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "item1",
+    "name": "Item One",
+    "description": "This is the first item.",
+    "price": 19.99,
+    "category": "Electronics"
+  },
+  {
+    "id": "item2",
+    "name": "Item Two",
+    "description": "This is the second item.",
+    "price": 29.99,
+    "category": "Books"
+  },
+  {
+    "id": "item3",
+    "name": "Item Three",
+    "description": "This is the third item.",
+    "price": 39.99,
+    "category": "Clothing"
+  }
+]

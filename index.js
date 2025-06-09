@@ -1,13 +1,13 @@
-const path = require("path");
-const router = require("./router.js");
+const http = require("http");
+const router = require("./apiRouter.js");
 
 const PORT = 4000;
 const HOST = "localhost";
 
-const server = require("http").createServer((req, res) => {
+const server = http.createServer((req, res) => {
   router(req, res);
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}/`);
+  console.log("server is running");
 });

@@ -1,6 +1,5 @@
 [
   { "name": "Item One", "price": 19.99, "size": "small(S)", "id": 1 },
   { "name": "Item Two", "price": 29.99, "size": "medium(M)", "id": 2 },
-  { "name": "Item Three", "price": 39.99, "size": "large(L)", "id": 3 },
-  { "name": "Item Gordian", "price": 9000, "size": "large(L)", "id": 4 }
+  { "name": "Item Three", "price": 39.99, "size": "large(L)", "id": 3 }
 ]

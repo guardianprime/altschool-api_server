@@ -3,6 +3,7 @@ const getItem = require("./handlers/getItem");
 const getItems = require("./handlers/getItems");
 const createItem = require("./handlers/createItem");
 const updateItem = require("./handlers/updateItem");
+const deleteItem = require("./handlers/deleteItem");
 
 function router(req, res) {
   const parsedUrl = parse(req.url, true);

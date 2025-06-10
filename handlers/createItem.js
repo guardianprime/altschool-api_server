@@ -36,7 +36,3 @@ module.exports = (req, res) => {
     }
   });
 };
-// This code handles the creation of a new item when a POST request is made to the "/items" endpoint.
-// It listens for incoming data, parses the JSON body, and responds with a success message or an error if the JSON is invalid.
-// If the request method is not POST or the URL is not "/items", it responds with a 405 Method Not Allowed error.
-// This is a basic implementation and can be extended to include database interactions or other business logic as needed.
